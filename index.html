@@ -3,260 +3,151 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Chef Robotiks</title>
+<title>Chef Robotiks | Automate Your Kitchen</title>
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
-
-/* subtle grid background like robotics / engineering sites */
-.grid-bg{
-  background-image:
-  linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-  background-size:40px 40px;
-}
-
-/* floating robot */
-@keyframes float{
-  0%{transform:translateY(0)}
-  50%{transform:translateY(-12px)}
-  100%{transform:translateY(0)}
-}
-
-.float{animation:float 5s ease-in-out infinite}
-
-/* rotating laplace symbol */
-@keyframes spinSlow{
-  from{transform:rotate(0deg)}
-  to{transform:rotate(0deg)}
-}
-
-.spin-slow{animation:spinSlow 18s linear infinite}
-
-/* glowing accent */
-.glow{
-  text-shadow:0 0 10px rgba(16,185,129,0.7);
-}
-
+body{background:#000}
+.glow{text-shadow:0 0 10px rgba(16,185,129,0.7)}
 </style>
 </head>
 
-<body class="bg-black text-gray-200 font-sans grid-bg">
+<body class="text-gray-200 font-sans">
 
-<!-- NAVBAR -->
-<nav class="flex items-center justify-between px-10 py-5 border-b border-gray-900 backdrop-blur">
+<!-- HERO (FOCUSED ON VALUE + CTA) -->
+<section class="max-w-5xl mx-auto px-6 py-24 text-center">
 
-<div class="flex items-center gap-4">
+<p class="text-emerald-400 text-sm tracking-widest mb-4">FOR CAFÉS & SMALL KITCHENS</p>
 
-<div class="text-3xl font-bold text-emerald-400 glow spin-slow" style = "position: absolute; left:45vw; font-size:2.95vw;">1/s</div>
-
-<div>
-<div class="font-semibold tracking-wider" style = "font-size:2.8vw;">Chef Robotiks</div>
-<div class="text-xs text-gray-500">Robotic Kitchen Systems</div>
-</div>
-
-</div>
-
-<div class="hidden md:flex gap-10 text-sm text-gray-400">
-<a href="#tech" class="hover:text-emerald-400">Technology</a>
-<a href="#systems" class="hover:text-emerald-400">Systems</a>
-<a href="#about" class="hover:text-emerald-400">About</a>
-<a href="#contact" class="hover:text-emerald-400">Contact</a>
-</div>
-
-</nav>
-
-
-<!-- HERO -->
-<section class="max-w-7xl mx-auto px-10 py-28 grid md:grid-cols-2 gap-16 items-center">
-
-<div>
-
-<p class="text-emerald-400 text-sm tracking-widest mb-4">ROBOTIC KITCHEN AUTOMATION</p>
-
-<h1 class="text-6xl font-bold leading-tight">
-Integrated
-<span class="text-emerald-400 glow">Robot Chefs</span>
+<h1 class="text-5xl font-bold leading-tight">
+Reduce Kitchen Labour with
+<span class="text-emerald-400 glow">Smart Automation</span>
 </h1>
 
-<p class="mt-8 text-gray-400 text-lg max-w-xl">
-Chef Robotiks develops intelligent robotic kitchen systems using
-control theory, embedded systems, and AI‑assisted automation.
-
-Our platform integrates robotics directly into real commercial kitchens.
+<p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
+We help cafés automate repetitive kitchen tasks like prep, assembly, and plating — improving consistency and reducing staffing pressure.
 </p>
 
-<div class="flex gap-4 mt-10">
-<button class="bg-emerald-500 hover:bg-emerald-400 text-black px-6 py-3 rounded-lg font-semibold">
-View Prototype
+<!-- PRIMARY CTA -->
+<div class="mt-10">
+<a href="#form" class="bg-emerald-500 hover:bg-emerald-400 text-black px-8 py-4 rounded-lg font-semibold text-lg">
+Join Pilot Programme
+</a>
+</div>
+
+<p class="mt-4 text-gray-600 text-sm">
+Limited early access • Free pilot spots available
+</p>
+
+</section>
+
+
+<!-- PROBLEM SECTION -->
+<section class="max-w-5xl mx-auto px-6 py-16 text-center">
+
+<h2 class="text-3xl font-bold">The Problem</h2>
+
+<div class="mt-10 grid md:grid-cols-3 gap-6 text-left">
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Staff shortages</h3>
+<p class="mt-2 text-gray-400">Hard to hire and retain kitchen staff</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Rising costs</h3>
+<p class="mt-2 text-gray-400">Labour eats into already tight margins</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Inconsistency</h3>
+<p class="mt-2 text-gray-400">Quality varies between staff and shifts</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOLUTION SECTION -->
+<section class="max-w-5xl mx-auto px-6 py-16 text-center">
+
+<h2 class="text-3xl font-bold">Our Approach</h2>
+
+<p class="mt-6 text-gray-400 max-w-2xl mx-auto">
+Instead of replacing your kitchen, we start by automating one repetitive task at a time — designed to fit into your existing workflow.
+</p>
+
+<div class="mt-10 grid md:grid-cols-3 gap-6 text-left">
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Step 1</h3>
+<p class="mt-2 text-gray-400">Identify repetitive tasks in your kitchen</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Step 2</h3>
+<p class="mt-2 text-gray-400">Simulate automation (pilot programme)</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg">
+<h3 class="text-emerald-400 font-semibold">Step 3</h3>
+<p class="mt-2 text-gray-400">Build simple, reliable automation around it</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOCIAL PROOF / LEARNING CTA -->
+<section class="max-w-4xl mx-auto px-6 py-16 text-center">
+
+<h2 class="text-3xl font-bold">We’re Looking for 5 Pilot Kitchens</h2>
+
+<p class="mt-6 text-gray-400">
+We’re working directly with café owners to understand real kitchen workflows and test automation in real environments.
+</p>
+
+<p class="mt-4 text-gray-500 text-sm">
+No robotics installed yet — just practical testing and real results
+</p>
+
+</section>
+
+
+<!-- FORM (CORE MVP METRIC) -->
+<section id="form" class="max-w-xl mx-auto px-6 py-20">
+
+<div class="bg-gray-900 p-8 rounded-xl border border-gray-800">
+
+<h3 class="text-xl font-semibold text-center">Request Early Access</h3>
+
+<form class="mt-6 space-y-4">
+
+<input type="text" placeholder="Your Name" class="w-full p-3 bg-black border border-gray-700 rounded-lg" />
+
+<input type="text" placeholder="Café / Business Name" class="w-full p-3 bg-black border border-gray-700 rounded-lg" />
+
+<input type="email" placeholder="Email Address" class="w-full p-3 bg-black border border-gray-700 rounded-lg" />
+
+<textarea placeholder="What’s your biggest kitchen bottleneck?" class="w-full p-3 bg-black border border-gray-700 rounded-lg"></textarea>
+
+<button class="w-full bg-emerald-500 hover:bg-emerald-400 text-black py-3 rounded-lg font-semibold">
+Join Pilot
 </button>
 
-<button class="border border-gray-700 px-6 py-3 rounded-lg hover:border-emerald-400">
-Technology
-</button>
-</div>
-
-<p class="mt-10 text-gray-600 text-sm">
-Founded 2025 · Currently in prototype development
-</p>
+</form>
 
 </div>
-
-
-<!-- ROBOT CHARACTER -->
-<div class="flex justify-center">
-
-<svg class="w-80 float" viewBox="0 0 200 200">
-
-<!-- antenna -->
-<line x1="100" y1="10" x2="100" y2="30" stroke="#10b981" stroke-width="3"/>
-<circle cx="100" cy="8" r="4" fill="#10b981"/>
-
-<!-- chef hat -->
-<ellipse cx="100" cy="45" rx="45" ry="18" fill="#e5e7eb"/>
-<rect x="65" y="45" width="70" height="18" fill="#e5e7eb"/>
-
-<!-- head -->
-<circle cx="100" cy="95" r="35" fill="#111" stroke="#10b981" stroke-width="3"/>
-
-<!-- eyes -->
-<circle cx="88" cy="90" r="6" fill="#10b981"/>
-<circle cx="112" cy="90" r="6" fill="#10b981"/>
-
-<!-- visor line -->
-<rect x="78" y="88" width="44" height="4" fill="#065f46"/>
-
-<!-- body -->
-<rect x="65" y="125" width="70" height="45" rx="8" fill="#111" stroke="#10b981" stroke-width="3"/>
-
-<!-- arms -->
-<rect x="40" y="130" width="25" height="8" fill="#10b981"/>
-<rect x="135" y="130" width="25" height="8" fill="#10b981"/>
-
-<!-- spatula tool -->
-<rect x="160" y="120" width="6" height="30" fill="#9ca3af"/>
-<rect x="154" y="110" width="18" height="10" fill="#9ca3af"/>
-
-<!-- chest logo -->
-<text x="100" y="155" text-anchor="middle" fill="#10b981" font-size="16">1/s</text>
-
-</svg>
-
-</div>
-
-</section>
-
-
-<!-- TECHNOLOGY -->
-<section id="tech" class="max-w-7xl mx-auto px-10 py-24">
-
-<h2 class="text-4xl font-bold mb-16">Technology</h2>
-
-<div class="grid md:grid-cols-3 gap-10">
-
-<div class="bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-emerald-500 transition">
-
-<h3 class="text-xl font-semibold text-emerald-400">Robotic Manipulation</h3>
-
-<p class="mt-4 text-gray-400">
-Industrial robotic arms integrated with custom kitchen tooling for
-handling food, utensils and cooking equipment.
-</p>
-
-</div>
-
-<div class="bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-emerald-500 transition">
-
-<h3 class="text-xl font-semibold text-emerald-400">Control Theory</h3>
-
-<p class="mt-4 text-gray-400">
-Impedance control, motion primitives and safe human‑robot
-interaction systems derived from modern robotics research.
-</p>
-
-</div>
-
-<div class="bg-gray-900 border border-gray-800 p-8 rounded-xl hover:border-emerald-500 transition">
-
-<h3 class="text-xl font-semibold text-emerald-400">Digital Twin</h3>
-
-<p class="mt-4 text-gray-400">
-Kitchen simulation environments used to model throughput,
-robot workflows and system reliability before deployment.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SYSTEMS -->
-<section id="systems" class="bg-gray-950 border-t border-gray-900 py-24">
-
-<div class="max-w-7xl mx-auto px-10">
-
-<h2 class="text-4xl font-bold mb-14">System Architecture</h2>
-
-<div class="grid md:grid-cols-4 gap-8 text-sm">
-
-<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
-<h4 class="text-emerald-400 font-semibold">Robot Layer</h4>
-<p class="mt-3 text-gray-400">Industrial robot arms and tooling</p>
-</div>
-
-<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
-<h4 class="text-emerald-400 font-semibold">Embedded Control</h4>
-<p class="mt-3 text-gray-400">Real‑time control and sensing</p>
-</div>
-
-<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
-<h4 class="text-emerald-400 font-semibold">Cloud Platform</h4>
-<p class="mt-3 text-gray-400">Fleet monitoring and analytics</p>
-</div>
-
-<div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
-<h4 class="text-emerald-400 font-semibold">Digital Twin</h4>
-<p class="mt-3 text-gray-400">Simulation and optimisation</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section id="about" class="max-w-4xl mx-auto px-10 py-24 text-center">
-
-<h2 class="text-4xl font-bold">About Chef Robotiks</h2>
-
-<p class="mt-8 text-gray-400 leading-relaxed">
-Chef Robotiks builds integrated robotic systems for the future of
-commercial kitchens.
-
-Our philosophy is inspired by the Laplace transform symbol
-<span class="text-emerald-400">1/s</span>, representing integration.
-
-Just as integration combines signals into systems,
-our technology integrates robotics into real‑world environments.
-</p>
 
 </section>
 
 
 <!-- FOOTER -->
-<footer id="contact" class="border-t border-gray-900 py-12 text-center text-gray-500">
-
-<p>© 2025 Chef Robotiks</p>
-<p class="mt-2">Robotic Kitchen Integration Platform</p>
-
+<footer class="text-center text-gray-600 py-10">
+<p>Chef Robotiks · MVP Test Landing Page</p>
 </footer>
 
 </body>
 </html>
-
-
-
