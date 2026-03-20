@@ -9,12 +9,59 @@
 <style>
 body{background:#000}
 .glow{text-shadow:0 0 10px rgba(16,185,129,0.7)}
+
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+
+.float{
+  animation: float 4s ease-in-out infinite;
+}
 </style>
 </head>
 
 <body class="text-gray-200 font-sans">
 
 <!-- HERO (FOCUSED ON VALUE + CTA) -->
+
+  <div class="flex justify-center mt-12">
+
+<svg class="w-20 float" viewBox="0 0 200 200">
+
+<!-- antenna -->
+<line x1="100" y1="20" x2="100" y2="40" stroke="#10b981" stroke-width="3"/>
+<circle cx="100" cy="18" r="4" fill="#10b981"/>
+
+<!-- chef hat -->
+<ellipse cx="100" cy="60" rx="30" ry="12" fill="#e5e7eb"/>
+<rect x="70" y="60" width="60" height="12" fill="#e5e7eb"/>
+
+<!-- head -->
+<circle cx="100" cy="105" r="30" fill="#111" stroke="#10b981" stroke-width="3"/>
+
+<!-- eyes -->
+<circle cx="90" cy="100" r="5" fill="#10b981"/>
+<circle cx="110" cy="100" r="5" fill="#10b981"/>
+
+<!-- visor -->
+<rect x="85" y="98" width="30" height="4" fill="#065f46"/>
+
+<!-- body -->
+<rect x="75" y="130" width="50" height="35" rx="6" fill="#111" stroke="#10b981" stroke-width="3"/>
+
+<!-- arms -->
+<rect x="55" y="135" width="20" height="6" fill="#10b981"/>
+<rect x="125" y="135" width="20" height="6" fill="#10b981"/>
+
+<!-- spatula -->
+<rect x="145" y="125" width="5" height="20" fill="#9ca3af"/>
+<rect x="140" y="115" width="15" height="10" fill="#9ca3af"/>
+
+</svg>
+
+</div>
 <section class="max-w-5xl mx-auto px-6 py-24 text-center">
 
 <p class="text-emerald-400 text-sm tracking-widest mb-4">FOR CAFÉS & SMALL KITCHENS</p>
@@ -136,7 +183,7 @@ class="rounded-lg border border-gray-800">
 Loading…
 </iframe>
 
-</div>>
+</div>
 
 </div>
 
