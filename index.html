@@ -19,12 +19,41 @@ body{background:#000}
 .float{
   animation: float 4s ease-in-out infinite;
 }
+
+  @keyframes spinSlow{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+.spin-slow{
+  animation: spinSlow 20s linear infinite;
+}
 </style>
 </head>
 
 <body class="text-gray-200 font-sans">
 
 <!-- HERO (FOCUSED ON VALUE + CTA) -->
+
+  <div class="flex justify-center mt-6">
+
+<svg class="w-16 spin-slow" viewBox="0 0 100 100">
+
+<circle cx="50" cy="50" r="45" stroke="#10b981" stroke-width="2" fill="none" opacity="0.3"/>
+
+<text 
+x="50" 
+y="58" 
+text-anchor="middle" 
+fill="#10b981" 
+font-size="28" 
+font-family="monospace">
+1/s
+</text>
+
+</svg>
+
+</div>
 
   <div class="flex justify-center mt-12">
 
